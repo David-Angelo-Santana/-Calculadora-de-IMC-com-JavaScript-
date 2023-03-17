@@ -5,9 +5,11 @@
     font-family: "lato", "sans-serif";
 }
 
+
 body{
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -103,12 +105,12 @@ button{
     opacity: 0.9;
     flex: 1;
 }
-#limpar-btn{
+#clear-btn{
     background-color: aqua;
     color: #090e22;
 }
 
-#limpar-btn:hover{
+#clear-btn:hover{
     background-color: blue;
     color: #fff;
 }
@@ -118,4 +120,57 @@ button:hover{
 }
 
 /*talbe*/
+
+#result-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+.span{
+    color: darkred;
+    
+}
+
+#imc-info{
+    font-size: 1.4rem;
+    color: #ccc;
+}
+
+#result-container h3{
+    margin-top: 1rem;
+    color: #dfdfdf;
+}
+
+#imc-table{
+    margin: 1.5rem 0;
+    font-size:0.8rem;
+}
+
+.table-header ,.table-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #444;
+  
+
+}
+
+.table-header h4,.table-data p {
+    flex: 1;
+    
+
+}
+
+.table-header h4:nth-child(3),.table-data p:nth-child(3) {
+    max-width: 80px;
+    
+
+}
+
+#back-btn{
+    align-self: center;
+}
 

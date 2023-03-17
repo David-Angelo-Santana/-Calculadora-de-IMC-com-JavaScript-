@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +13,9 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div class="header"></div>
    <div class="container">
-    <div id="cal-container">
+    <div id="cal-container"  class="hide">
         <h2>Calculadora de IMC</h2>
         <form id="imc-form">
             <div class="formi-inputs">
@@ -41,9 +41,9 @@
             </div>
         </form>
     </div>
-    <div id="result-container" class="hide">
-        <p id="imc-number">Seu IMC:<span></span></p>
-        <p id="imc-info">Situação atual:<span></span></p>
+    <div id="result-container">
+        <p id="imc-number">Seu IMC:<span>25</span></p>
+        <p id="imc-info">Situação atual:<span class="span"> Abaixo do Peso</span></p>
         <h3>Confira as Classificações:</h3>
         <div id="imc-table">
             <div class="table-header">
@@ -51,6 +51,11 @@
                 <h4>Classificação</h4>
                 <h4>Obesidade</h4>
             </div>
+            <div class="table-data">
+                <p>Menor que 18,5<p>
+                <p class="span">Magreza</p>
+                <p>0</p>
+            </div>  
         </div>
         <button id="back-btn">Voltar</button>
     </div>

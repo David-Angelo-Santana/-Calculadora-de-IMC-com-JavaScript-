@@ -6,21 +6,55 @@
 }
 
 body{
-    background-color:#090e22;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     color: #fff;
+    
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .hide{
     display: none !important;
 }
 .container{
     width: 400px;
     height: 400px;
-    background-color: #1d1e33;
+    background-color: #090909;
     padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(238, 21, 21, 0.928);
 }
 
 /*IMC form*/
@@ -48,6 +82,7 @@ body{
 
 .form-control input{
     padding: 1rem 0.5rem;
+    border-radius: 1rem;
 
 }
 
@@ -61,7 +96,7 @@ body{
 button{
     text-transform: uppercase;
     padding: 1rem 1.5rem;
-    background-color: #f44236;
+    background-color: #41344a;
     border: none;
     color: #fff;
     cursor: pointer;
